@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script>
+    setTimeout(function () {
+      location.href = '<%= redirectUrl %>'
+    }, 3000)
+  </script>
+  <script>
+    history.pushState(null, null, location.href);
+    window.onpopstate = function () {
+      history.go(1);
+    };
+  </script>
+  <title>Thank You</title>
+</head>
+
+<body>
+  <p>Thank You for using our system</p>
+  <p>
+    you will be redirected to <a href="<%= redirectUrl%>"><%= redirectUrl%></a>
+  </p>
+
+</body>
+
+</html>

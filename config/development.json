@@ -1,0 +1,14 @@
+{
+  "app": "ProjectName",
+  "port": 3000,
+  "baseUrl": "localhost:3000",
+  "db": {
+    "type": "postgres",
+    "host": "localhost",
+    "port": 5432,
+    "username": "postgres",
+    "password": "postgres",
+    "database": "project_development",
+    "logging": true
+  }
+}
